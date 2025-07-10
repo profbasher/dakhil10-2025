@@ -34,23 +34,29 @@
     <form id="entryForm" class="bg-white p-4 sm:p-6 rounded shadow mb-6 space-y-4">
       <!-- Name and Roll -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <input name="s_name" placeholder="Name" class="p-2 border rounded w-full"/>
-        <input name="roll" placeholder="Roll (unique)" class="p-2 border rounded w-full"/>
+        <div>
+          <label for="s_name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+          <input id="s_name" name="s_name" placeholder="Name" class="p-2 border rounded w-full"/>
+        </div>
+        <div>
+          <label for="roll" class="block text-sm font-medium text-gray-700 mb-1">Roll</label>
+          <input id="roll" name="roll" placeholder="Roll (unique)" class="p-2 border rounded w-full"/>
+        </div>
       </div>
 
       <!-- Subjects -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         <div>
           <label for="kuran_tajvid" class="block text-sm font-medium text-gray-700 mb-1">Kuran & Tajvid</label>
-          <input id="kuran_tajvid" name="kuran_tajvid" type="number" step="any" class="p-2 border rounded w-full" />
+          <input id="kuran_tajvid" name="kuran_tajvid" placeholder="Kuran & Tajvid" type="number" step="any" class="p-2 border rounded w-full" />
         </div>
         <div>
           <label for="akaid_fikah" class="block text-sm font-medium text-gray-700 mb-1">Akaid & Fikah</label>
-          <input id="akaid_fikah" name="akaid_fikah" type="number" step="any" class="p-2 border rounded w-full" />
+          <input id="akaid_fikah" name="akaid_fikah" placeholder="Akaid & Fikah" type="number" step="any" class="p-2 border rounded w-full" />
         </div>
         <div>
           <label for="hadis" class="block text-sm font-medium text-gray-700 mb-1">Hadis</label>
-          <input id="hadis" name="hadis" type="number" step="any" class="p-2 border rounded w-full" />
+          <input id="hadis" name="hadis" placeholder="Hadis" type="number" step="any" class="p-2 border rounded w-full" />
         </div>
 
         <!-- Remaining inputs -->
